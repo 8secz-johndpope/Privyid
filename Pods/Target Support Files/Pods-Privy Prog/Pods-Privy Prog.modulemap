@@ -1,0 +1,6 @@
+framework module Pods_Privy_Prog {
+  umbrella header "Pods-Privy Prog-umbrella.h"
+
+  export *
+  module * { export * }
+}
