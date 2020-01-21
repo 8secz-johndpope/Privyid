@@ -1,4 +1,4 @@
-platform :ios, '8.0'
+platform :ios, '9.0'
 use_frameworks!
 target 'Privy Prog' do
 
@@ -11,5 +11,11 @@ pod 'SDWebImage'
 
 #keyboard nav
 pod 'IQKeyboardManager'
+
+#Slide Img
+pod 'FSPagerView'
+
+#ImageSlideFullScrenn
+pod 'SKPhotoBrowser'
 
 end

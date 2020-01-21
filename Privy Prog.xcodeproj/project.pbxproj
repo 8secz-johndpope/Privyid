@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0481384C23D731E3006F1B32 /* fieldLoginRegis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0481384A23D731E3006F1B32 /* fieldLoginRegis.swift */; };
+		0481384D23D731E3006F1B32 /* fieldLoginRegis.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0481384B23D731E3006F1B32 /* fieldLoginRegis.xib */; };
+		0481384F23D7448F006F1B32 /* FunctionGlobal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0481384E23D7448F006F1B32 /* FunctionGlobal.swift */; };
+		0481385223D74728006F1B32 /* HeaderStyle1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0481385023D74728006F1B32 /* HeaderStyle1.swift */; };
+		0481385323D74728006F1B32 /* HeaderStyle1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0481385123D74728006F1B32 /* HeaderStyle1.xib */; };
+		0481385623D74CB2006F1B32 /* fieldOTPView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0481385423D74CB2006F1B32 /* fieldOTPView.swift */; };
+		0481385723D74CB2006F1B32 /* fieldOTPView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0481385523D74CB2006F1B32 /* fieldOTPView.xib */; };
+		0481385A23D755A6006F1B32 /* BannerImgCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0481385823D755A6006F1B32 /* BannerImgCell.swift */; };
+		0481385B23D755A6006F1B32 /* BannerImgCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0481385923D755A6006F1B32 /* BannerImgCell.xib */; };
+		0481385E23D75B44006F1B32 /* MenuHomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0481385C23D75B44006F1B32 /* MenuHomeCell.swift */; };
+		0481385F23D75B44006F1B32 /* MenuHomeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0481385D23D75B44006F1B32 /* MenuHomeCell.xib */; };
 		1B9B8DFF02A49624BE233783 /* Pods_Privy_Prog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B570E645ADD714DA33A13E2 /* Pods_Privy_Prog.framework */; };
 		2D1E903423D5E856001C6B96 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1E903323D5E856001C6B96 /* AppDelegate.swift */; };
 		2D1E903B23D5E858001C6B96 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D1E903A23D5E858001C6B96 /* Assets.xcassets */; };
@@ -21,6 +32,17 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0481384A23D731E3006F1B32 /* fieldLoginRegis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fieldLoginRegis.swift; sourceTree = "<group>"; };
+		0481384B23D731E3006F1B32 /* fieldLoginRegis.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = fieldLoginRegis.xib; sourceTree = "<group>"; };
+		0481384E23D7448F006F1B32 /* FunctionGlobal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionGlobal.swift; sourceTree = "<group>"; };
+		0481385023D74728006F1B32 /* HeaderStyle1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderStyle1.swift; sourceTree = "<group>"; };
+		0481385123D74728006F1B32 /* HeaderStyle1.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderStyle1.xib; sourceTree = "<group>"; };
+		0481385423D74CB2006F1B32 /* fieldOTPView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fieldOTPView.swift; sourceTree = "<group>"; };
+		0481385523D74CB2006F1B32 /* fieldOTPView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = fieldOTPView.xib; sourceTree = "<group>"; };
+		0481385823D755A6006F1B32 /* BannerImgCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerImgCell.swift; sourceTree = "<group>"; };
+		0481385923D755A6006F1B32 /* BannerImgCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BannerImgCell.xib; sourceTree = "<group>"; };
+		0481385C23D75B44006F1B32 /* MenuHomeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuHomeCell.swift; sourceTree = "<group>"; };
+		0481385D23D75B44006F1B32 /* MenuHomeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuHomeCell.xib; sourceTree = "<group>"; };
 		1071ABC4540BAA9175ED7F97 /* Pods-Privy Prog.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Privy Prog.debug.xcconfig"; path = "Target Support Files/Pods-Privy Prog/Pods-Privy Prog.debug.xcconfig"; sourceTree = "<group>"; };
 		2B570E645ADD714DA33A13E2 /* Pods_Privy_Prog.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Privy_Prog.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D1E903023D5E856001C6B96 /* Privy Prog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Privy Prog.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -95,6 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				2D55A38F23D60D140066E002 /* Server.swift */,
+				0481384E23D7448F006F1B32 /* FunctionGlobal.swift */,
 			);
 			path = System;
 			sourceTree = "<group>";
@@ -102,6 +125,8 @@
 		2D55A38123D60C080066E002 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				0481385023D74728006F1B32 /* HeaderStyle1.swift */,
+				0481385123D74728006F1B32 /* HeaderStyle1.xib */,
 				2D55A38E23D60D030066E002 /* LoginRegis */,
 				2D55A39923D60F9A0066E002 /* Home */,
 			);
@@ -131,6 +156,10 @@
 		2D55A38E23D60D030066E002 /* LoginRegis */ = {
 			isa = PBXGroup;
 			children = (
+				0481384A23D731E3006F1B32 /* fieldLoginRegis.swift */,
+				0481384B23D731E3006F1B32 /* fieldLoginRegis.xib */,
+				0481385423D74CB2006F1B32 /* fieldOTPView.swift */,
+				0481385523D74CB2006F1B32 /* fieldOTPView.xib */,
 			);
 			path = LoginRegis;
 			sourceTree = "<group>";
@@ -146,6 +175,10 @@
 		2D55A39923D60F9A0066E002 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				0481385823D755A6006F1B32 /* BannerImgCell.swift */,
+				0481385923D755A6006F1B32 /* BannerImgCell.xib */,
+				0481385C23D75B44006F1B32 /* MenuHomeCell.swift */,
+				0481385D23D75B44006F1B32 /* MenuHomeCell.xib */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -227,10 +260,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0481385323D74728006F1B32 /* HeaderStyle1.xib in Resources */,
 				2D55A39C23D60FC00066E002 /* Login.storyboard in Resources */,
+				0481384D23D731E3006F1B32 /* fieldLoginRegis.xib in Resources */,
+				0481385F23D75B44006F1B32 /* MenuHomeCell.xib in Resources */,
 				2D55A38823D60C220066E002 /* Main.storyboard in Resources */,
 				2D55A38723D60C220066E002 /* LaunchScreen.storyboard in Resources */,
+				0481385B23D755A6006F1B32 /* BannerImgCell.xib in Resources */,
 				2D1E903B23D5E858001C6B96 /* Assets.xcassets in Resources */,
+				0481385723D74CB2006F1B32 /* fieldOTPView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,10 +323,16 @@
 			files = (
 				2D1E903423D5E856001C6B96 /* AppDelegate.swift in Sources */,
 				2D55A39223D60E270066E002 /* LoginController.swift in Sources */,
+				0481385223D74728006F1B32 /* HeaderStyle1.swift in Sources */,
+				0481385623D74CB2006F1B32 /* fieldOTPView.swift in Sources */,
 				2D55A39823D60F4F0066E002 /* HomeController.swift in Sources */,
 				2D55A39423D60E6C0066E002 /* OTPController.swift in Sources */,
 				2D55A39023D60D140066E002 /* Server.swift in Sources */,
+				0481385A23D755A6006F1B32 /* BannerImgCell.swift in Sources */,
+				0481384C23D731E3006F1B32 /* fieldLoginRegis.swift in Sources */,
+				0481384F23D7448F006F1B32 /* FunctionGlobal.swift in Sources */,
 				2D55A38D23D60CC70066E002 /* RegisterController.swift in Sources */,
+				0481385E23D75B44006F1B32 /* MenuHomeCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -445,6 +489,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Privy Prog/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -452,7 +497,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "denis.tirta.Privy-Prog";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -463,6 +508,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Privy Prog/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -470,7 +516,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "denis.tirta.Privy-Prog";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

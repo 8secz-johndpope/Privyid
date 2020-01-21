@@ -1,4 +1,6 @@
 import UIKit
+import Alamofire
+import SwiftyJSON
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -8,7 +10,44 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        getAkses()
         return true
+    }
+    
+    func getAkses(){
+        let param = "\(GET_Credentials())?access_token=\(UserDefaults.standard.value(forKey: "token") as? String ?? "")"
+
+        print(param)
+        Alamofire.request(param , headers: headersAuth)
+            .responseJSON { response in
+                switch response.result{
+                case .success(let a):
+                    print(a)
+                    switch response.response?.statusCode{
+                    case 200?:
+
+                        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                        let controller = storyboard.instantiateViewController(withIdentifier :"HomeController") as! HomeController
+                        let navigationController = UINavigationController(rootViewController: controller)
+                        navigationController.navigationBar.isTranslucent = false
+                        navigationController.isNavigationBarHidden = true
+                        self.window?.rootViewController = navigationController
+                        self.window?.makeKeyAndVisible()
+                        
+                    default:
+                        let jsonResult = JSON(response.result.value!)
+                        var message = ""
+                        for i in 0..<jsonResult["error"]["errors"].count{
+                            message.append("\(jsonResult["error"]["errors"][i].stringValue)\n")
+                        }
+                        print(message)
+                    }
+
+                case .failure(let error) :
+                    print(error.localizedDescription)
+                }
+        }
     }
 
     func applicationWillResignActive(_ application: UIApplication) {

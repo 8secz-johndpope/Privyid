@@ -1,30 +1,38 @@
 PODS:
   - Alamofire (4.9.1)
-  - IQKeyboardManager (6.5.5)
-  - SDWebImage (5.5.1):
-    - SDWebImage/Core (= 5.5.1)
-  - SDWebImage/Core (5.5.1)
+  - FSPagerView (0.8.3)
+  - IQKeyboardManager (6.5.4)
+  - SDWebImage (5.4.1):
+    - SDWebImage/Core (= 5.4.1)
+  - SDWebImage/Core (5.4.1)
+  - SKPhotoBrowser (6.1.0)
   - SwiftyJSON (5.0.0)
 
 DEPENDENCIES:
   - Alamofire
+  - FSPagerView
   - IQKeyboardManager
   - SDWebImage
+  - SKPhotoBrowser
   - SwiftyJSON
 
 SPEC REPOS:
-  trunk:
+  https://github.com/cocoapods/specs.git:
     - Alamofire
+    - FSPagerView
     - IQKeyboardManager
     - SDWebImage
+    - SKPhotoBrowser
     - SwiftyJSON
 
 SPEC CHECKSUMS:
   Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
-  IQKeyboardManager: 3a8b9e603f8b0eeaf5f096a1f2b2cfcf121992ef
-  SDWebImage: 1245d058b7b8f59adef7a6da6bbafd4f1ab67041
+  FSPagerView: 670405b2f18e2a87fa37f20b00de783e562c25a8
+  IQKeyboardManager: 72b359cd7e777e3a984cedbe05f8da45320cbb63
+  SDWebImage: 29c340dbdcef342bb13125553f4e19ce056b07a7
+  SKPhotoBrowser: 343de95d89dc7913763c5dda243cc6e606e4a168
   SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
 
-PODFILE CHECKSUM: dbb0ce3f898de2c9a6c44aefe8925e1c0d70ab6b
+PODFILE CHECKSUM: a4c5c809ab7edceb685f1d03f71d251bac3ff77f
 
-COCOAPODS: 1.8.4
+COCOAPODS: 1.7.3

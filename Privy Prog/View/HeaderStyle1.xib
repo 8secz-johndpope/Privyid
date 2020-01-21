@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="HeaderStyle1" id="Bfz-cs-t9q" customClass="HeaderStyle1" customModule="Privy_Prog" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title Header" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zei-la-dUY">
+                    <rect key="frame" x="80" y="0.0" width="254" height="80"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                    <color key="textColor" red="0.68705064058303833" green="0.1390051543712616" blue="0.09012109786272049" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XnM-Pf-f6g">
+                    <rect key="frame" x="0.0" y="0.0" width="50" height="80"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="PX5-uB-xIS"/>
+                        <constraint firstAttribute="height" constant="80" id="fTa-2s-7WS"/>
+                    </constraints>
+                    <state key="normal" image="icBack"/>
+                    <connections>
+                        <action selector="action:" destination="Bfz-cs-t9q" eventType="touchUpInside" id="Wr5-Gh-xZW"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="XnM-Pf-f6g" firstAttribute="top" secondItem="qnc-27-VDH" secondAttribute="top" id="7gC-xz-jcY"/>
+                <constraint firstItem="XnM-Pf-f6g" firstAttribute="leading" secondItem="qnc-27-VDH" secondAttribute="leading" id="9PU-5j-fRL"/>
+                <constraint firstItem="qnc-27-VDH" firstAttribute="bottom" secondItem="zei-la-dUY" secondAttribute="bottom" id="CHG-Wc-mMN"/>
+                <constraint firstItem="qnc-27-VDH" firstAttribute="bottom" secondItem="XnM-Pf-f6g" secondAttribute="bottom" id="JJG-v5-Jbf"/>
+                <constraint firstItem="zei-la-dUY" firstAttribute="leading" secondItem="qnc-27-VDH" secondAttribute="leading" constant="80" id="hoy-vQ-SeB"/>
+                <constraint firstItem="qnc-27-VDH" firstAttribute="trailing" secondItem="zei-la-dUY" secondAttribute="trailing" constant="80" id="lSR-PK-Fh1"/>
+                <constraint firstItem="zei-la-dUY" firstAttribute="top" secondItem="qnc-27-VDH" secondAttribute="top" id="q4B-er-lpM"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="qnc-27-VDH"/>
+            <connections>
+                <outlet property="btnBack" destination="XnM-Pf-f6g" id="X2o-eY-cGw"/>
+                <outlet property="titleHeader" destination="zei-la-dUY" id="aQH-F4-clC"/>
+            </connections>
+            <point key="canvasLocation" x="200" y="-11"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icBack" width="26.666666030883789" height="26.666666030883789"/>
+    </resources>
+</document>
