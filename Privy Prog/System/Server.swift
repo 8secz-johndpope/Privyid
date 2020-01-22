@@ -14,6 +14,7 @@ func headerBarear() -> [String:String]{
         "Content-Type": "application/json",
         "Authorization" : UserDefaults.standard.value(forKey: "AuthorizationUser") as? String ?? ""
     ]
+    print(headerCustomer)
     return headerCustomer
 }
 
@@ -37,7 +38,7 @@ public enum oauth: String {
     case revoke         = "api/v1/oauth/revoke"
 }
 func GET_Credentials() -> String{
-    return "\(Base)\(oauth.credentials.rawValue)"
+    return "\(Base)\(oauth.credentials.rawValue)?access_token=\(UserDefaults.standard.value(forKey: "token") as? String ?? "")"
 }
 func POST_Sign() -> String{
     return "\(Base)\(oauth.sign.rawValue)"
@@ -53,7 +54,7 @@ public enum profile: String {
     case changeProfile  = "api/v1/profile"
     case showProfile    = "api/v1/profile/me"
 }
-func GET_Career() -> String{
+func POST_Career() -> String{
     return "\(Base)\(profile.career.rawValue)"
 }
 func POST_Education() -> String{

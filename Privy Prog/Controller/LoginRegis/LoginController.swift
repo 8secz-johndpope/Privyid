@@ -18,6 +18,7 @@ class LoginController: UIViewController, fieldLoginRegisDelegate {
     func createView(){
         self.view.backgroundColor = .init(white: 230/255, alpha: 1)
             
+        //MARK: create field login
         field = Bundle.main.loadNibNamed("fieldLoginRegis", owner: nil, options: nil)?.first as! fieldLoginRegis
         field.country.isHidden = true
         field.topConstrain.constant = 40
@@ -53,6 +54,7 @@ class LoginController: UIViewController, fieldLoginRegisDelegate {
     }
     
     func actionLogin() {
+        showLoding()
         let param = [
             "phone" : phone,
             "password" : pass,
@@ -69,6 +71,8 @@ class LoginController: UIViewController, fieldLoginRegisDelegate {
                     print(a)
                     switch response.response?.statusCode{
                     case 201?:
+                        
+                        hide()
                         let jsonResult = JSON(response.result.value!)
                         let type = jsonResult["data"]["user"]["token_type"].stringValue
                         let token = jsonResult["data"]["user"]["access_token"].stringValue
@@ -84,8 +88,10 @@ class LoginController: UIViewController, fieldLoginRegisDelegate {
                         self.requestOTP()
                         
                     case 500?:
+                        hide()
                         AlertMessage(title: "Error", message: "Something Wrong Server", targetVC: self)
                     default:
+                        hide()
                         let jsonResult = JSON(response.result.value!)
                         var message = ""
                         for i in 0..<jsonResult["error"]["errors"].count{
@@ -95,6 +101,7 @@ class LoginController: UIViewController, fieldLoginRegisDelegate {
                     }
 
                 case .failure(let error) :
+                    hide()
                     AlertMessage(title: "Error", message: error.localizedDescription, targetVC: self)
                 }
         }
@@ -112,6 +119,7 @@ class LoginController: UIViewController, fieldLoginRegisDelegate {
                     print(a)
                     switch response.response?.statusCode{
                     case 201?:
+                        hide()
                         let jsonResult = JSON(response.result.value!)
                         
                         let story = UIStoryboard(name: "Login", bundle: nil)
@@ -121,8 +129,10 @@ class LoginController: UIViewController, fieldLoginRegisDelegate {
                         self.navigationController?.pushViewController(controll, animated: true)
                         
                     case 500?:
+                        hide()
                         AlertMessage(title: "Error", message: "Something Wrong Server", targetVC: self)
                     default:
+                        hide()
                         let jsonResult = JSON(response.result.value!)
                         var message = ""
                         for i in 0..<jsonResult["error"]["errors"].count{
@@ -132,6 +142,7 @@ class LoginController: UIViewController, fieldLoginRegisDelegate {
                     }
 
                 case .failure(let error) :
+                    hide()
                     AlertMessage(title: "Error", message: error.localizedDescription, targetVC: self)
                 }
         }
@@ -141,39 +152,6 @@ class LoginController: UIViewController, fieldLoginRegisDelegate {
         let story = UIStoryboard(name: "Login", bundle: nil)
         let controll = story.instantiateViewController(withIdentifier: "RegisterController") as! RegisterController
         self.navigationController?.pushViewController(controll, animated: true)
-    }
-    
-    func ProsesLogin(){
-        let param = [
-            "phone" : phone,
-            "password" : pass,
-            "latlong" : "",
-            "device_token" : "",
-            "device_type" : "0"
-        ]
-
-        Alamofire.request(POST_Sign(), method: .post, parameters: param, encoding: JSONEncoding.default)
-            .responseJSON { response in
-                switch response.result{
-                case .success(_):
-                    switch response.response?.statusCode{
-                    case 200?:
-                        let jsonResult = JSON(response.result.value!)
-                        if jsonResult["status"].stringValue == "success"{
-                            
-                        }else{
-                            
-                        }
-                    case 500?:
-                        print("500")
-                    default:
-                        print("default")
-                    }
-
-                case .failure(let error) :
-                    print(error.localizedDescription)
-                }
-        }
     }
     
     override func didReceiveMemoryWarning() {

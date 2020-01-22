@@ -13,18 +13,18 @@ class OTPController: UIViewController, HeaderStyle1Delegate, fieldOTPViewDelegat
         super.viewDidLoad()
         
         createView()
-        print("cek phone = \(phone)")
-        print("cek id = \(id_User)")
     }
     
     func createView(){
         self.view.backgroundColor = .init(white: 230/255, alpha: 1)
             
+        //MARK: create header
         header = Bundle.main.loadNibNamed("HeaderStyle1", owner: nil, options: nil)?.first as! HeaderStyle1
         header.titleHeader.text = ""
         header.delegate = self
         self.view .addSubview(header)
         
+        //MARK: create field OTP
         field = Bundle.main.loadNibNamed("fieldOTPView", owner: nil, options: nil)?.first as! fieldOTPView
         field.label1.text = "Enter your OTP"
         field.label2.text = "We've sent PIN to this number\n\(phone)"
@@ -73,6 +73,7 @@ class OTPController: UIViewController, HeaderStyle1Delegate, fieldOTPViewDelegat
     //MARK:- fieldOTPViewDelegate
     func getPin(pin: String) {
         if pin.count > 3{
+            showLoding()
             let param = [
                 "user_id"   : id_User,
                 "otp_code"  : pin,
@@ -86,6 +87,7 @@ class OTPController: UIViewController, HeaderStyle1Delegate, fieldOTPViewDelegat
                         print(a)
                         switch response.response?.statusCode{
                         case 201?:
+                            hide()
                             let jsonResult = JSON(response.result.value!)
                             let type = jsonResult["data"]["user"]["token_type"].stringValue
                             let token = jsonResult["data"]["user"]["access_token"].stringValue
@@ -98,8 +100,10 @@ class OTPController: UIViewController, HeaderStyle1Delegate, fieldOTPViewDelegat
                             self.navigationController?.pushViewController(controll, animated: true)
                             
                         case 500?:
+                            hide()
                             AlertMessage(title: "Error", message: "Something Wrong Server", targetVC: self)
                         default:
+                            hide()
                             let jsonResult = JSON(response.result.value!)
                             var message = ""
                             for i in 0..<jsonResult["error"]["errors"].count{
@@ -109,6 +113,7 @@ class OTPController: UIViewController, HeaderStyle1Delegate, fieldOTPViewDelegat
                         }
 
                     case .failure(let error) :
+                        hide()
                         AlertMessage(title: "Error", message: error.localizedDescription, targetVC: self)
                     }
             }

@@ -7,6 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		044FB51023D87A0400CA0F48 /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044FB50F23D87A0400CA0F48 /* ProfileController.swift */; };
+		044FB51223D87A2E00CA0F48 /* MessageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044FB51123D87A2E00CA0F48 /* MessageController.swift */; };
+		044FB51923D87CA100CA0F48 /* FieldStyle1ProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044FB51723D87CA100CA0F48 /* FieldStyle1ProfileCell.swift */; };
+		044FB51A23D87CA100CA0F48 /* FieldStyle1ProfileCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 044FB51823D87CA100CA0F48 /* FieldStyle1ProfileCell.xib */; };
+		044FB51D23D87CC200CA0F48 /* FieldStyle2ProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044FB51B23D87CC200CA0F48 /* FieldStyle2ProfileCell.swift */; };
+		044FB51E23D87CC200CA0F48 /* FieldStyle2ProfileCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 044FB51C23D87CC200CA0F48 /* FieldStyle2ProfileCell.xib */; };
+		044FB52123D8843300CA0F48 /* FooterStyle1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044FB51F23D8843300CA0F48 /* FooterStyle1.swift */; };
+		044FB52223D8843300CA0F48 /* FooterStyle1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 044FB52023D8843300CA0F48 /* FooterStyle1.xib */; };
+		044FB52F23D89ABC00CA0F48 /* SambagMonthYearPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044FB52523D89ABB00CA0F48 /* SambagMonthYearPickerViewController.swift */; };
+		044FB53023D89ABC00CA0F48 /* AlphaTransitioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044FB52623D89ABB00CA0F48 /* AlphaTransitioning.swift */; };
+		044FB53123D89ABC00CA0F48 /* SambagTimePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044FB52723D89ABB00CA0F48 /* SambagTimePickerViewController.swift */; };
+		044FB53223D89ABC00CA0F48 /* WheelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044FB52823D89ABB00CA0F48 /* WheelViewController.swift */; };
+		044FB53323D89ABC00CA0F48 /* SambagTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044FB52923D89ABB00CA0F48 /* SambagTheme.swift */; };
+		044FB53423D89ABC00CA0F48 /* SambagMonthYearPickerResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044FB52A23D89ABB00CA0F48 /* SambagMonthYearPickerResult.swift */; };
+		044FB53523D89ABC00CA0F48 /* TimeMeridian.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044FB52B23D89ABB00CA0F48 /* TimeMeridian.swift */; };
+		044FB53623D89ABC00CA0F48 /* SambagTimePickerResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044FB52C23D89ABB00CA0F48 /* SambagTimePickerResult.swift */; };
+		044FB53723D89ABC00CA0F48 /* SambagDatePickerResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044FB52D23D89ABB00CA0F48 /* SambagDatePickerResult.swift */; };
+		044FB53823D89ABC00CA0F48 /* SambagDatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044FB52E23D89ABB00CA0F48 /* SambagDatePickerViewController.swift */; };
+		044FB53A23D89E4A00CA0F48 /* EducationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044FB53923D89E4A00CA0F48 /* EducationController.swift */; };
+		044FB53C23D89E6700CA0F48 /* CareerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044FB53B23D89E6700CA0F48 /* CareerController.swift */; };
+		044FB53F23D8A81200CA0F48 /* PUGIFLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044FB53E23D8A81200CA0F48 /* PUGIFLoading.swift */; };
+		044FB54123D8A86900CA0F48 /* loading.gif in Resources */ = {isa = PBXBuildFile; fileRef = 044FB54023D8A86900CA0F48 /* loading.gif */; };
 		0481384C23D731E3006F1B32 /* fieldLoginRegis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0481384A23D731E3006F1B32 /* fieldLoginRegis.swift */; };
 		0481384D23D731E3006F1B32 /* fieldLoginRegis.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0481384B23D731E3006F1B32 /* fieldLoginRegis.xib */; };
 		0481384F23D7448F006F1B32 /* FunctionGlobal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0481384E23D7448F006F1B32 /* FunctionGlobal.swift */; };
@@ -32,6 +54,29 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		044FB50F23D87A0400CA0F48 /* ProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
+		044FB51123D87A2E00CA0F48 /* MessageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageController.swift; sourceTree = "<group>"; };
+		044FB51723D87CA100CA0F48 /* FieldStyle1ProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldStyle1ProfileCell.swift; sourceTree = "<group>"; };
+		044FB51823D87CA100CA0F48 /* FieldStyle1ProfileCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FieldStyle1ProfileCell.xib; sourceTree = "<group>"; };
+		044FB51B23D87CC200CA0F48 /* FieldStyle2ProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldStyle2ProfileCell.swift; sourceTree = "<group>"; };
+		044FB51C23D87CC200CA0F48 /* FieldStyle2ProfileCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FieldStyle2ProfileCell.xib; sourceTree = "<group>"; };
+		044FB51F23D8843300CA0F48 /* FooterStyle1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooterStyle1.swift; sourceTree = "<group>"; };
+		044FB52023D8843300CA0F48 /* FooterStyle1.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FooterStyle1.xib; sourceTree = "<group>"; };
+		044FB52323D8915500CA0F48 /* All-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "All-Bridging-Header.h"; sourceTree = "<group>"; };
+		044FB52523D89ABB00CA0F48 /* SambagMonthYearPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SambagMonthYearPickerViewController.swift; sourceTree = "<group>"; };
+		044FB52623D89ABB00CA0F48 /* AlphaTransitioning.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlphaTransitioning.swift; sourceTree = "<group>"; };
+		044FB52723D89ABB00CA0F48 /* SambagTimePickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SambagTimePickerViewController.swift; sourceTree = "<group>"; };
+		044FB52823D89ABB00CA0F48 /* WheelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WheelViewController.swift; sourceTree = "<group>"; };
+		044FB52923D89ABB00CA0F48 /* SambagTheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SambagTheme.swift; sourceTree = "<group>"; };
+		044FB52A23D89ABB00CA0F48 /* SambagMonthYearPickerResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SambagMonthYearPickerResult.swift; sourceTree = "<group>"; };
+		044FB52B23D89ABB00CA0F48 /* TimeMeridian.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeMeridian.swift; sourceTree = "<group>"; };
+		044FB52C23D89ABB00CA0F48 /* SambagTimePickerResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SambagTimePickerResult.swift; sourceTree = "<group>"; };
+		044FB52D23D89ABB00CA0F48 /* SambagDatePickerResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SambagDatePickerResult.swift; sourceTree = "<group>"; };
+		044FB52E23D89ABB00CA0F48 /* SambagDatePickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SambagDatePickerViewController.swift; sourceTree = "<group>"; };
+		044FB53923D89E4A00CA0F48 /* EducationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EducationController.swift; sourceTree = "<group>"; };
+		044FB53B23D89E6700CA0F48 /* CareerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CareerController.swift; sourceTree = "<group>"; };
+		044FB53E23D8A81200CA0F48 /* PUGIFLoading.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PUGIFLoading.swift; sourceTree = "<group>"; };
+		044FB54023D8A86900CA0F48 /* loading.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = loading.gif; sourceTree = "<group>"; };
 		0481384A23D731E3006F1B32 /* fieldLoginRegis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fieldLoginRegis.swift; sourceTree = "<group>"; };
 		0481384B23D731E3006F1B32 /* fieldLoginRegis.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = fieldLoginRegis.xib; sourceTree = "<group>"; };
 		0481384E23D7448F006F1B32 /* FunctionGlobal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionGlobal.swift; sourceTree = "<group>"; };
@@ -72,6 +117,49 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		044FB51323D87C3C00CA0F48 /* Message */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		044FB51423D87C3C00CA0F48 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				044FB51723D87CA100CA0F48 /* FieldStyle1ProfileCell.swift */,
+				044FB51823D87CA100CA0F48 /* FieldStyle1ProfileCell.xib */,
+				044FB51B23D87CC200CA0F48 /* FieldStyle2ProfileCell.swift */,
+				044FB51C23D87CC200CA0F48 /* FieldStyle2ProfileCell.xib */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		044FB52423D89ABB00CA0F48 /* SambagDateTime */ = {
+			isa = PBXGroup;
+			children = (
+				044FB52523D89ABB00CA0F48 /* SambagMonthYearPickerViewController.swift */,
+				044FB52623D89ABB00CA0F48 /* AlphaTransitioning.swift */,
+				044FB52723D89ABB00CA0F48 /* SambagTimePickerViewController.swift */,
+				044FB52823D89ABB00CA0F48 /* WheelViewController.swift */,
+				044FB52923D89ABB00CA0F48 /* SambagTheme.swift */,
+				044FB52A23D89ABB00CA0F48 /* SambagMonthYearPickerResult.swift */,
+				044FB52B23D89ABB00CA0F48 /* TimeMeridian.swift */,
+				044FB52C23D89ABB00CA0F48 /* SambagTimePickerResult.swift */,
+				044FB52D23D89ABB00CA0F48 /* SambagDatePickerResult.swift */,
+				044FB52E23D89ABB00CA0F48 /* SambagDatePickerViewController.swift */,
+			);
+			path = SambagDateTime;
+			sourceTree = "<group>";
+		};
+		044FB53D23D8A81200CA0F48 /* PUGifLoading */ = {
+			isa = PBXGroup;
+			children = (
+				044FB53E23D8A81200CA0F48 /* PUGIFLoading.swift */,
+			);
+			path = PUGifLoading;
+			sourceTree = "<group>";
+		};
 		2D1E902723D5E856001C6B96 = {
 			isa = PBXGroup;
 			children = (
@@ -116,6 +204,10 @@
 		2D55A38023D60C080066E002 /* System */ = {
 			isa = PBXGroup;
 			children = (
+				044FB53D23D8A81200CA0F48 /* PUGifLoading */,
+				044FB52423D89ABB00CA0F48 /* SambagDateTime */,
+				044FB52323D8915500CA0F48 /* All-Bridging-Header.h */,
+				044FB54023D8A86900CA0F48 /* loading.gif */,
 				2D55A38F23D60D140066E002 /* Server.swift */,
 				0481384E23D7448F006F1B32 /* FunctionGlobal.swift */,
 			);
@@ -127,8 +219,12 @@
 			children = (
 				0481385023D74728006F1B32 /* HeaderStyle1.swift */,
 				0481385123D74728006F1B32 /* HeaderStyle1.xib */,
+				044FB51F23D8843300CA0F48 /* FooterStyle1.swift */,
+				044FB52023D8843300CA0F48 /* FooterStyle1.xib */,
 				2D55A38E23D60D030066E002 /* LoginRegis */,
 				2D55A39923D60F9A0066E002 /* Home */,
+				044FB51423D87C3C00CA0F48 /* Profile */,
+				044FB51323D87C3C00CA0F48 /* Message */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -168,6 +264,10 @@
 			isa = PBXGroup;
 			children = (
 				2D55A39723D60F4F0066E002 /* HomeController.swift */,
+				044FB50F23D87A0400CA0F48 /* ProfileController.swift */,
+				044FB53923D89E4A00CA0F48 /* EducationController.swift */,
+				044FB53B23D89E6700CA0F48 /* CareerController.swift */,
+				044FB51123D87A2E00CA0F48 /* MessageController.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -263,11 +363,15 @@
 				0481385323D74728006F1B32 /* HeaderStyle1.xib in Resources */,
 				2D55A39C23D60FC00066E002 /* Login.storyboard in Resources */,
 				0481384D23D731E3006F1B32 /* fieldLoginRegis.xib in Resources */,
+				044FB51E23D87CC200CA0F48 /* FieldStyle2ProfileCell.xib in Resources */,
 				0481385F23D75B44006F1B32 /* MenuHomeCell.xib in Resources */,
 				2D55A38823D60C220066E002 /* Main.storyboard in Resources */,
+				044FB52223D8843300CA0F48 /* FooterStyle1.xib in Resources */,
 				2D55A38723D60C220066E002 /* LaunchScreen.storyboard in Resources */,
 				0481385B23D755A6006F1B32 /* BannerImgCell.xib in Resources */,
+				044FB54123D8A86900CA0F48 /* loading.gif in Resources */,
 				2D1E903B23D5E858001C6B96 /* Assets.xcassets in Resources */,
+				044FB51A23D87CA100CA0F48 /* FieldStyle1ProfileCell.xib in Resources */,
 				0481385723D74CB2006F1B32 /* fieldOTPView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -321,18 +425,36 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				044FB51923D87CA100CA0F48 /* FieldStyle1ProfileCell.swift in Sources */,
 				2D1E903423D5E856001C6B96 /* AppDelegate.swift in Sources */,
+				044FB53F23D8A81200CA0F48 /* PUGIFLoading.swift in Sources */,
+				044FB53623D89ABC00CA0F48 /* SambagTimePickerResult.swift in Sources */,
 				2D55A39223D60E270066E002 /* LoginController.swift in Sources */,
+				044FB52F23D89ABC00CA0F48 /* SambagMonthYearPickerViewController.swift in Sources */,
 				0481385223D74728006F1B32 /* HeaderStyle1.swift in Sources */,
+				044FB53223D89ABC00CA0F48 /* WheelViewController.swift in Sources */,
 				0481385623D74CB2006F1B32 /* fieldOTPView.swift in Sources */,
 				2D55A39823D60F4F0066E002 /* HomeController.swift in Sources */,
+				044FB51023D87A0400CA0F48 /* ProfileController.swift in Sources */,
 				2D55A39423D60E6C0066E002 /* OTPController.swift in Sources */,
+				044FB53C23D89E6700CA0F48 /* CareerController.swift in Sources */,
 				2D55A39023D60D140066E002 /* Server.swift in Sources */,
 				0481385A23D755A6006F1B32 /* BannerImgCell.swift in Sources */,
+				044FB53723D89ABC00CA0F48 /* SambagDatePickerResult.swift in Sources */,
+				044FB51223D87A2E00CA0F48 /* MessageController.swift in Sources */,
+				044FB53523D89ABC00CA0F48 /* TimeMeridian.swift in Sources */,
 				0481384C23D731E3006F1B32 /* fieldLoginRegis.swift in Sources */,
 				0481384F23D7448F006F1B32 /* FunctionGlobal.swift in Sources */,
+				044FB53123D89ABC00CA0F48 /* SambagTimePickerViewController.swift in Sources */,
+				044FB53423D89ABC00CA0F48 /* SambagMonthYearPickerResult.swift in Sources */,
+				044FB53A23D89E4A00CA0F48 /* EducationController.swift in Sources */,
+				044FB53323D89ABC00CA0F48 /* SambagTheme.swift in Sources */,
+				044FB52123D8843300CA0F48 /* FooterStyle1.swift in Sources */,
 				2D55A38D23D60CC70066E002 /* RegisterController.swift in Sources */,
 				0481385E23D75B44006F1B32 /* MenuHomeCell.swift in Sources */,
+				044FB53823D89ABC00CA0F48 /* SambagDatePickerViewController.swift in Sources */,
+				044FB51D23D87CC200CA0F48 /* FieldStyle2ProfileCell.swift in Sources */,
+				044FB53023D89ABC00CA0F48 /* AlphaTransitioning.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -496,6 +618,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "denis.tirta.Privy-Prog";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_NAME)/System/All-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -515,6 +638,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "denis.tirta.Privy-Prog";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_NAME)/System/All-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

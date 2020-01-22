@@ -4,19 +4,29 @@ import SDWebImage
 import FSPagerView
 
 protocol BannerImgCellDelegate {
-    
+    func showBanner(indexImg: Int)
+    func showProfile()
 }
 
 class BannerImgCell: UITableViewCell, FSPagerViewDataSource, FSPagerViewDelegate {
     
     var delegate: BannerImgCellDelegate?
+    @IBOutlet weak var img: UIImageView!
+    @IBOutlet weak var name: UILabel!
+    @IBOutlet weak var carear: UILabel!
     var data = [String]()
     
     override func awakeFromNib() {
         super.awakeFromNib()
 
-//        pagerView.delegate = self
-//        pagerView.dataSource = self
+        img.layer.cornerRadius = img.frame.width/2
+        img.layer.shadowColor = UIColor.white.cgColor
+        img.layer.shadowRadius = 5.6
+        img.layer.shadowOpacity = 0.15
+        img.layer.shadowOffset = .init(width: 0, height: 0)
+        
+        pagerView.delegate = self
+        pagerView.dataSource = self
         self.pageControl.currentPage = 0
     }
     
@@ -56,7 +66,7 @@ class BannerImgCell: UITableViewCell, FSPagerViewDataSource, FSPagerViewDelegate
         pagerView.deselectItem(at: index, animated: true)
         pagerView.scrollToItem(at: index, animated: true)
         self.pageControl.currentPage = index
-//        delegate?.pushImg(indexImg: index)
+        delegate?.showBanner(indexImg: index)
     }
     
     func pagerViewDidScroll(_ pagerView: FSPagerView) {
@@ -66,5 +76,8 @@ class BannerImgCell: UITableViewCell, FSPagerViewDataSource, FSPagerViewDelegate
         self.pageControl.currentPage = pagerView.currentIndex // Or Use KVO with property "currentIndex"
     }
     
+    @IBAction func shwoProfile(_ sender: Any) {
+        delegate?.showProfile()
+    }
     
 }

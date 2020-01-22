@@ -16,10 +16,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func getAkses(){
-        let param = "\(GET_Credentials())?access_token=\(UserDefaults.standard.value(forKey: "token") as? String ?? "")"
-
-        print(param)
-        Alamofire.request(param , headers: headersAuth)
+        showLoding()
+        Alamofire.request(GET_Credentials() , headers: headersAuth)
             .responseJSON { response in
                 switch response.result{
                 case .success(let a):
@@ -27,6 +25,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                     switch response.response?.statusCode{
                     case 200?:
 
+                        hide()
                         let storyboard = UIStoryboard(name: "Main", bundle: nil)
                         let controller = storyboard.instantiateViewController(withIdentifier :"HomeController") as! HomeController
                         let navigationController = UINavigationController(rootViewController: controller)
@@ -36,6 +35,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                         self.window?.makeKeyAndVisible()
                         
                     default:
+                        
+                        hide()
                         let jsonResult = JSON(response.result.value!)
                         var message = ""
                         for i in 0..<jsonResult["error"]["errors"].count{
@@ -45,6 +46,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                     }
 
                 case .failure(let error) :
+                    hide()
                     print(error.localizedDescription)
                 }
         }

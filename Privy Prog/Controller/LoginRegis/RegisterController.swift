@@ -21,11 +21,13 @@ class RegisterController: UIViewController, HeaderStyle1Delegate, fieldLoginRegi
     func createView(){
         self.view.backgroundColor = .init(white: 230/255, alpha: 1)
             
+        //MARK: create header
         header = Bundle.main.loadNibNamed("HeaderStyle1", owner: nil, options: nil)?.first as! HeaderStyle1
         header.titleHeader.text = "Register"
         header.delegate = self
         self.view .addSubview(header)
         
+        //MARK: create field regis
         field = Bundle.main.loadNibNamed("fieldLoginRegis", owner: nil, options: nil)?.first as! fieldLoginRegis
         field.topConstrain.constant = 80
         field.btnLogin.setTitle("REGISTER", for: .normal)
@@ -89,6 +91,7 @@ class RegisterController: UIViewController, HeaderStyle1Delegate, fieldLoginRegi
     }
     
     func actionLogin() {
+        showLoding()
         let param = [
             "phone" : phone,
             "password" : pass,
@@ -109,8 +112,10 @@ class RegisterController: UIViewController, HeaderStyle1Delegate, fieldLoginRegi
                         self.requestOTP()
                         
                     case 500?:
+                        hide()
                         AlertMessage(title: "Error", message: "Something Wrong Server", targetVC: self)
                     default:
+                        hide()
                         let jsonResult = JSON(response.result.value!)
                         var message = ""
                         for i in 0..<jsonResult["error"]["errors"].count{
@@ -120,6 +125,7 @@ class RegisterController: UIViewController, HeaderStyle1Delegate, fieldLoginRegi
                     }
 
                 case .failure(let error) :
+                    hide()
                     AlertMessage(title: "Error", message: error.localizedDescription, targetVC: self)
                 }
         }
@@ -140,6 +146,7 @@ class RegisterController: UIViewController, HeaderStyle1Delegate, fieldLoginRegi
                 case .success(_):
                     switch response.response?.statusCode{
                     case 201?:
+                        hide()
                         let jsonResult = JSON(response.result.value!)
                         
                         let story = UIStoryboard(name: "Login", bundle: nil)
@@ -149,8 +156,10 @@ class RegisterController: UIViewController, HeaderStyle1Delegate, fieldLoginRegi
                         self.navigationController?.pushViewController(controll, animated: true)
                         
                     case 500?:
+                        hide()
                         AlertMessage(title: "Error", message: "Something Wrong Server", targetVC: self)
                     default:
+                        hide()
                         let jsonResult = JSON(response.result.value!)
                         var message = ""
                         for i in 0..<jsonResult["error"]["errors"].count{
@@ -160,6 +169,7 @@ class RegisterController: UIViewController, HeaderStyle1Delegate, fieldLoginRegi
                     }
 
                 case .failure(let error) :
+                    hide()
                     AlertMessage(title: "Error", message: error.localizedDescription, targetVC: self)
                 }
         }
@@ -174,23 +184,3 @@ class RegisterController: UIViewController, HeaderStyle1Delegate, fieldLoginRegi
     }
     
 }
-
-
-//{
-//  "data": {
-//    "user": {
-//      "id": "e701436c-0997-42c9-ba22-182382570b6e",
-//      "phone": "6288215768124",
-//      "user_status": "pending",
-//      "user_type": "normal_user",
-//      "sugar_id": "SG64578",
-//      "country": "indonesia",
-//      "latlong": null,
-//      "user_device": {
-//        "device_token": "123",
-//        "device_type": "ios",
-//        "device_status": "grant"
-//      }
-//    }
-//  }
-//}

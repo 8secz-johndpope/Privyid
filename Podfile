@@ -18,4 +18,7 @@ pod 'FSPagerView'
 #ImageSlideFullScrenn
 pod 'SKPhotoBrowser'
 
+#Picker
+pod 'CZPicker'
+
 end
